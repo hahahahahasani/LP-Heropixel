@@ -14,3 +14,16 @@ navLink.forEach(link => {
         hamburger.classList.toggle("ri-close-large-line");
     })
 })
+
+// -------------- Scroll Navbar --------------
+const scrollHeader = () => {
+    const header = document.getElementById("navbar");
+
+    if (this.scrollY >= 50) {
+        header.classList.add("bg-black", "bg-opacity-80");
+    } else {
+        header.classList.remove("bg-black", "bg-opacity-80");
+    }
+}
+
+window.addEventListener("scroll", scrollHeader);

@@ -4,16 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Born2bSportyFS';
+    src: url('assets/img/born2bsporty-fs/Born2bSportyFS.otf');
+}
+
 body {
     @apply text-white tracking-wider;
 }
 
 section {
-    @apply py-20 md:py-28;
+    @apply py-20 md:py-28 z-30;
 }
 
 h1 {
-    @apply font-Pixelify font-extrabold text-[30px];
+    @apply font-Born font-medium tracking-wide text-[30px];
 }
 
 p {
